@@ -237,6 +237,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 75px;
+  margin-bottom: 45px;
 }
 .hero__regionFlags .hero__regionItem {
   width: 260px;
