@@ -1,0 +1,171 @@
+.hero__inputMenu {
+    padding: 0 81px;
+    margin-bottom: 48px;
+    .hero__item {
+        display: flex;
+        justify-content: space-between;
+    
+        .hero__search {
+            width: 480px;
+            height: 56px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+    
+            &::placeholder {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #848484;
+            }
+    
+            &::before {
+                content: "";
+                width: 17.5px;
+                height: 17.5px;
+                background-image: url(/Img/search-icon.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                position: absolute;
+                left: 28px;
+                top: 19px;
+            }
+    
+            input {
+                width: 70%;
+                height: 70%;
+                padding: 0 14px;
+                border: none;
+            }
+        }
+    
+        .hero__filterRegion
+        {
+            width: 200px;        
+            height: 56px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+            border-radius: 5px;
+            padding: 18px 24px;
+            option
+            {
+                background: #FFFFFF;
+                box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+                border-radius: 5px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero__inputMenu
+    {
+        padding: 0;
+        .hero__item
+        {
+            flex-direction: column;
+            .hero__search
+            {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+            .hero__filterRegion
+            {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.hero__regionFlags
+{
+    padding: 0px 81px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+    .hero__regionItem
+    {
+        width: 260px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+        border-radius: 5px;
+        position: relative;
+        padding: 184px 0 0 0;
+        transition: .3s;
+        &:hover
+        {
+            box-shadow: -15px 15px 15px #00000080;
+        }
+        .hero__flagImage
+        {
+            width: 100%;
+            height: 160px;
+            background-image: url(/Img/hero__flagsGermany.png);
+            position: absolute;
+            top: 0;
+        }
+        .hero__flagImage2
+        {
+            background-image: url(/Img/hero__flagsAmerica.png);
+        }
+        .hero__flagImage3
+        {
+            background-image: url(/Img/hero__flagsBrazil.png);
+        }
+        .hero__flagImage4
+        {
+            background-image: url(/Img/hero__flagsIceland.png);
+        }
+        .hero__flagImage5
+        {
+            background-image: url(/Img/hero__flagsAfganistan.png);
+        }
+        .hero__flagImage6
+        {
+            background-image: url(/Img/hero__flagsIsland.png);
+        }
+        .hero__flagImage7
+        {
+            background-image: url(/Img/hero__flagsAlbania.png);
+        }
+        .hero__flagImage8
+        {
+            background-image: url(/Img/hero__flagsAlgeria.png);
+        }
+        h2{
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 26px;
+            color: #111517;
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        .regionItem__informationList
+        {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #111517;
+            margin-left: 24px;
+            margin-bottom: 46px;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero__regionFlags
+    {
+        padding: 0 25px;
+        .hero__regionItem
+        {
+            margin: auto;
+        }
+    }
+}
