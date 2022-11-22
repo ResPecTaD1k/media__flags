@@ -38,10 +38,11 @@
             }
     
             input {
-                width: 70%;
+                width: 100%;
                 height: 70%;
                 padding: 0 14px;
                 border: none;
+                margin-left: 45px;
             }
         }
     
@@ -89,6 +90,7 @@
     padding: 0px 81px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 75px;
     margin-bottom: 45px;
     .hero__regionItem
@@ -100,10 +102,6 @@
         position: relative;
         padding: 184px 0 0 0;
         transition: .3s;
-        &:hover
-        {
-            box-shadow: -15px 15px 15px #00000080;
-        }
         .hero__flagImage
         {
             width: 100%;
@@ -168,5 +166,12 @@
         {
             margin: auto;
         }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .hero__regionFlags
+    {
+        padding: 0;
     }
 }
