@@ -43,6 +43,10 @@
                 padding: 0 14px;
                 border: none;
                 margin-left: 45px;
+                &:focus
+                {
+                    outline: none;
+                }
             }
         }
     

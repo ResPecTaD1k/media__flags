@@ -22,6 +22,9 @@ body {
   font-family: "Nunito Sans", sans-serif;
   background-color: #FAFAFA;
 }
+body::-webkit-scrollbar {
+  overflow-y: hidden;
+}
 
 a {
   text-decoration: none;
@@ -197,6 +200,9 @@ img {
   padding: 0 14px;
   border: none;
   margin-left: 45px;
+}
+.hero__inputMenu .hero__item .hero__search input:focus {
+  outline: none;
 }
 .hero__inputMenu .hero__item .hero__filterRegion {
   width: 200px;
